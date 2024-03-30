@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martina's store</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="titolo">Il mio negozio</h1>
+  
+    <div class="buttons">
+      <button class="button" onclick="cambiaTitolo('Sono contenta che sei arrivato qui!')">Cambia Titolo</button>
+      <button class="button" onclick="cambiaColoreSfondo()">Cambia Colore di Sfondo</button>
+      <button class="button" onclick="cambiaIndirizzo()">Cambia Indirizzo</button>
+      <button class="button" onclick="aggiungiClasseAmazon()">Link Amazon</button>
+      <button class="button" onclick="toggleVisibilitaImmagini()">Mostra/Nascondi Immagini</button>
+      <button class="button" onclick="cambiaColorePrezzo()">Cambia Colore Prezzo</button>
+</div>
+  </header>
+
+    <main class="container">
+      <div class="card">
+        <img class="img1" src="/assets/motorola.jpg" alt="Prodotto 1" />
+        <h2>Motorola moto g14</h2>
+        <ul>
+          <li>Schermo Full HD+ da 6,5</li>
+          <li>Altoparlanti stereo con Dolby Atmos</li>
+          <li>Sistema avanzato di fotocamere da 50 MP</li>
+          <li>Colore: sky blue</li>
+        </ul>
+        <p id="prezzo">Prezzo: €95.00</p>
+        <a href="https://www.amazon.it/Motorola-fotocamera-Display-batteria-espandibile/dp/B0CC6CYHY6/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1JGL6FL3SFSO2&dib=eyJ2IjoiMSJ9.Khoxa16zW7diQE8FWySxgbiXIB1Pup6iCg3EodQ53ZVW0ec1UkxkGsdPbGx8aJSSEkiJ6gIw6orbjFhkDXBJh7JdI7gE2ryS9Thofbw2YkEScJR_o_owmXgC4kO26x7ytI5YarrKEpb1rORiynusF53umO2dqtwlkQl2wTkSiXICguEao6uAOiTXHuJBPAgSmSciljF3K4o1sTD8fSieQt_ZbcngWjj2WKmHrt2F17Cqi5O8AqqIOlpeULBX14xeuVA8yveCyBMWvm98F6TWUGh4gKEGnztHLpK8H3YjCjs.A2AV5LUMlTLOZupWFDb1AstaUNpt4hMO0URh_uXztxA&dib_tag=se&keywords=telefoni&qid=1711813206&sprefix=telefoni%2Caps%2C157&sr=8-5">Acquista su Amazon</a>
+        <hr>
+        <form>
+            <label for="commento"> Hai commenti? </label><br>
+            <textarea id="commento" name="commento" rows="4" cols="20"></textarea><br>
+            <input type="submit" value="Invia">
+        </form>
+      </div>
+      <div class="card">
+        <img class="img2" src="/assets/iphone 15.jpg" alt="Prodotto 1" />
+        <h2>Iphone 15 (128GB)</h2>
+        <ul>
+          <li>Dinamic island</li>
+          <li>Design innovativo</li>
+          <li>Ritratti di nuova generazione</li>
+          <li>Connettività usb-c</li>
+          <li>Colore: nero</li>
+        </ul>
+        <p id="prezzo2">Prezzo: €799.00</p>
+        <a href="https://www.amazon.it/Apple-iPhone-15-128-GB/dp/B0CHWV5HTM/ref=sr_1_1_sspa?crid=1Q8S6H1WN2MB8&dib=eyJ2IjoiMSJ9.7G2WUVSsVzDIoHulpCgA51JbsxsuZlAun4x1BbJNv4sa6HxwYMKg-7OH44FvF5W4NgqY6_u5F95EpWwAuEQ5iBg69nmvnctPmuP3LFZDSfU3KVrc5eGlLvNpruoCo1w2wohQpgcQUnNsFaq3Wf77jjdQwo3BY8j32ln620_n6q1N2agfZGb-PykFACVCe8J8Jt26e00pPTqkhFkpSW47YE8jGIszu-qXl8sFVrTFftg9hby3QDKgDMUY-4kGagdcnYBtWE2IpaJ3Y9j4p4vWTlPmGp9PmsQ03J_pVFQbjvA.hz3_5shnvPHs4I-E4JKJylmbIjaC-_mJyQr8MLRqNQo&dib_tag=se&keywords=iphone&qid=1711813532&sprefix=iphone%2Caps%2C165&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Acquista su Amazon</a>
+        <hr>
+        <form>
+            <label for="commento"> Hai commenti? </label><br>
+            <textarea id="commento" name="commento" rows="4" cols="20"></textarea><br>
+            <input type="submit" value="Invia">
+        </form>
+
+      </div>
+      <div class="card">
+        <img class="img3" src="/assets/iphone 14.jpg" alt="Prodotto 1" />
+        <h2>Iphone 14 (128 GB)</h2>
+        <ul>
+          <li>Apple</li>
+          <li>Sistema operativo: iOs 16</li>
+          <li>Tecnologia cellulare 5G</li>
+          <li>Capacità memoria: 128GB</li>
+          <li>Colore: mezzanotte</li>
+        </ul>
+        <p id="prezzo3">Prezzo: €649.00</p>
+        <a href="https://www.amazon.it/Apple-iPhone-14-128-Mezzanotte/dp/B0BDKBLF8C/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LYW17PPPG5RH&dib=eyJ2IjoiMSJ9.7G2WUVSsVzDIoHulpCgA51JbsxsuZlAun4x1BbJNv4sa6HxwYMKg-7OH44FvF5W4NgqY6_u5F95EpWwAuEQ5iBg69nmvnctPmuP3LFZDSfU3KVrc5eGlLvNpruoCo1w2wohQpgcQUnNsFaq3Wf77jjdQwo3BY8j32ln620_n6q1N2agfZGb-PykFACVCe8J8Jt26e00pPTqkhFkpSW47YE8jGIszu-qXl8sFVrTFftg9hby3QDKgDMUY-4kGagdcnYBtWE2IpaJ3Y9j4p4vWTlPmGp9PmsQ03J_pVFQbjvA.hz3_5shnvPHs4I-E4JKJylmbIjaC-_mJyQr8MLRqNQo&dib_tag=se&keywords=iphone&qid=1711813603&sprefix=iphone%2Caps%2C173&sr=8-4&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35">Acquista su Amazon</a>
+        <hr>
+        <form>
+            <label for="commento"> Hai commenti? </label><br>
+            <textarea id="commento" name="commento" rows="4" cols="20"></textarea><br>
+            <input type="submit" value="Invia">
+        </form>
+
+      </div>
+      <div class="card">
+        <img class="img4" src="/assets/iphone 15 pro max.jpg" alt="Prodotto 1" />
+        <h2>IPhone 15 pro max</h2>
+        <ul>
+          <li>Apple</li>
+          <li>Sistema operativo: iOs </li>
+          <li>Tecnologia: Wi-Fi, USB</li>
+          <li>Colore: titanio naturale</li>
+          <li>Tecnologia: 5G</li>
+        </ul>
+        <p id="prezzo4">Prezzo: €1299.00</p>
+        <a href="https://www.amazon.it/Apple-iPhone-Pro-Max-256/dp/B0CHX4FBSK/ref=sr_1_11?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LYW17PPPG5RH&dib=eyJ2IjoiMSJ9.7G2WUVSsVzDIoHulpCgA51JbsxsuZlAun4x1BbJNv4sa6HxwYMKg-7OH44FvF5W4NgqY6_u5F95EpWwAuEQ5iBg69nmvnctPmuP3LFZDSfU3KVrc5eGlLvNpruoCo1w2wohQpgcQUnNsFaq3Wf77jjdQwo3BY8j32ln620_n6q1N2agfZGb-PykFACVCe8J8Jt26e00pPTqkhFkpSW47YE8jGIszu-qXl8sFVrTFftg9hby3QDKgDMUY-4kGagdcnYBtWE2IpaJ3Y9j4p4vWTlPmGp9PmsQ03J_pVFQbjvA.hz3_5shnvPHs4I-E4JKJylmbIjaC-_mJyQr8MLRqNQo&dib_tag=se&keywords=iphone&qid=1711813665&sprefix=iphone%2Caps%2C173&sr=8-11&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35">Acquista su Amazon</a>
+        <hr>
+        <form>
+            <label for="commento"> Hai commenti? </label><br>
+            <textarea id="commento" name="commento" rows="4" cols="20"></textarea><br>
+            <input type="submit" value="Invia">
+        </form>
+
+      </div>
+      <div class="card">
+        <img class="img5" src="/assets/samsung a333.jpg" alt="Prodotto 1" />
+        <h2>Samsung Galaxy A33</h2>
+        <ul>
+          <li>Samsung Galaxy A33 5G </li>
+          <li>Tipologia di prodotto: CELLULAR PHONE</li>
+          <li>Marca: Samsung</li>
+          <li>Colore: Nero</li>
+        </ul></p>
+        
+        <p id="prezzo5">Prezzo: €216.90</p>
+        <a href="https://www.amazon.it/Samsung-Galaxy-SM-A336B-Hybrid-Android/dp/B09SHWGFJC/ref=sr_1_22?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=19K5ZN0EGFL21&dib=eyJ2IjoiMSJ9.VgqmHeRUXjxs_pguhyxReuOct4oiZ8I3Iznx0_w-gDTS1vgvpN3lEDWogRXSpvoNmf4ATeT0by8iV-V0ubJl67Da34Bq40-9LMDFv1OcaYysXQkA9Jr6LcMplmTne7nsFsbylEEIuLB1Q8NqkmjCykC08Ue-lQ5PmQYTfRzpjI-mxqCQlYMVsrBI2spNnZicV8xLFKqN3SRIHkC_4J82B0GlBXXJ22dNzgfkXHRkGHvMx8WkV3jR94zaJKuBz5gTrljG6FLnx6sv5X4YbyrCLSj0qv2Inzx5g3ADG8eBKMw.jvhgr1_Z7PMx0-opQ2Jn_WVeCG3yL2fzEsNm7LGS-RQ&dib_tag=se&keywords=samsung&qid=1711813742&sprefix=samsung%2Caps%2C157&sr=8-22&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35">Acquista su Amazon</a>
+        <hr>
+        <form>
+            <label for="commento"> Hai commenti? </label><br>
+            <textarea id="commento" name="commento" rows="4" cols="20"></textarea><br>
+            <input type="submit" value="Invia">
+        </form>
+
+      </div>
+    </main>
+    <footer>
+      <p>Martina's online store</p>
+      <p id="indirizzo">Via XX Settembre, 60 - Torino</p>
+
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>

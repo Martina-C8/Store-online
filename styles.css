@@ -1,0 +1,68 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  header {
+    background-color: #05534D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .card img {
+    margin: 0 auto; 
+  }
+
+
+  footer {
+    background-color: #05534D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .img1, .img2, .img3, .img4, .img5 {
+    width: 150px;
+  }
+
+  .amazon-link {
+    color: blue; 
+    font-weight: bold; 
+  }
+
+  .hidden {
+    display: none;
+  }
+
+.buttons {
+  display: flex;
+  justify-content:space-around;
+
+}
+
+.button {
+  width: 190px;
+  height: 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+  
